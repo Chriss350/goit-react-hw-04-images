@@ -64,6 +64,7 @@ export const App = () => {
     if (e.code === 'Escape') {
       setIsModalOpen(false);
     }
+    setIsModalOpen(false);
   };
 
   const openModalHandler = e => {
