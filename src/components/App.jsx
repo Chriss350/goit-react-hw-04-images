@@ -40,9 +40,9 @@ export const App = () => {
     }
   };
 
-  // useEffect(() => {
-  //   fetchImages(searchInput, page);
-  // }, [searchInput, page]);
+  useEffect(() => {
+    fetchImages(searchInput, page);
+  }, [searchInput, page]);
 
   const changeHandler = e => {
     const value = e.target.value;
