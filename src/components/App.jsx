@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
 import { ThreeCircles } from 'react-loader-spinner';
 import { ImageGallery } from './ImageGallery/ImageGallery';
@@ -40,10 +40,10 @@ export const App = () => {
     }
   };
 
-  // useEffect(() => {
-  //   fetchImages(searchInput, page);
-  //   // eslint-disable-next-line react-hooks/exhaustive-deps
-  // }, [searchInput, page]);
+  useEffect(() => {
+    fetchImages(searchInput, page);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [searchInput, page]);
 
   const changeHandler = e => {
     const value = e.target.value;
